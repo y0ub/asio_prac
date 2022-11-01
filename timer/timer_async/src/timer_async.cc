@@ -9,7 +9,7 @@ void say_hello(const boost::system::error_code &)
 void print()
 {
   boost::asio::io_context io;
-  boost::asio::steady_timer t(io, boost::asio::chrono::seconds(n));
+  boost::asio::steady_timer t(io, boost::asio::chrono::seconds(2));
   t.async_wait(&say_hello);
   io.run();
 }
