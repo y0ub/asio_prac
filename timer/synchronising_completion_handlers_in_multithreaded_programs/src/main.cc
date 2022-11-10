@@ -1,5 +1,6 @@
 /*
  * strand provides serialised handler execution.
+ * need for compile: option "-lboost_thread-mt"
  */
 #include <iostream>
 #include <boost/asio.hpp>
